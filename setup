@@ -9,7 +9,7 @@ touch "$HOME"/.config/nix/nix.conf
 echo "experimental-features = nix-command flakes" >> "$HOME"/.config/nix/nix.conf
 
 # installing packages
-nix_packages = (
+nix_packages=(
   "neovim"
   )
 for package in nix_packages; do
