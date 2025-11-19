@@ -12,7 +12,7 @@ echo "experimental-features = nix-command flakes" >> "$HOME"/.config/nix/nix.con
 nix_packages=(
   "neovim"
   )
-for package in nix_packages; do
+for package in "${nix_packages[@]}"; do
   nix profile add nixpkgs#$package
 
 # copiing dotfiles
