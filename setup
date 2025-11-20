@@ -2,7 +2,7 @@
 
 # installing nix package manager
 sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --no-daemon
-sudo /home/vscode/.nix-profile/etc/profile.d/nix.sh
+sudo bash /home/vscode/.nix-profile/etc/profile.d/nix.sh
 
 # enabling nix flakes
 mkdir "$HOME"/.config/nix
