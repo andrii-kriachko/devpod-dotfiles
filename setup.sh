@@ -8,6 +8,7 @@ sh <(curl --proto '=https' --tlsv1.2 -L https://nixos.org/nix/install) --no-daem
 mkdir "$HOME"/.config/nix
 touch "$HOME"/.config/nix/nix.conf
 echo "experimental-features = nix-command flakes" >> "$HOME"/.config/nix/nix.conf
+echo "access-tokens = github.com=$NIX_ACCESS_TOKEN" >> "$HOME"/.config/nix/nix.conf
 
 # installing packages
 nix_packages=(
