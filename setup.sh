@@ -13,6 +13,7 @@ echo "access-tokens = github.com=$NIX_ACCESS_TOKEN" >> "$HOME"/.config/nix/nix.c
 # installing packages
 nix_packages=(
   "neovim"
+  "nodejs_24"
   )
 for package in "${nix_packages[@]}"; do
   nix profile add nixpkgs#$package
