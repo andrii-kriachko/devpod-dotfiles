@@ -14,6 +14,12 @@ echo "access-tokens = github.com=$NIX_ACCESS_TOKEN" >> "$HOME"/.config/nix/nix.c
 nix_packages=(
   "neovim"
   "nodejs_24"
+  "luarocks_bootstrap"
+  "ripgrep"
+  "lua"
+  "fd"
+  "lazygit"
+  "fzf"
   )
 for package in "${nix_packages[@]}"; do
   nix profile add nixpkgs#$package
